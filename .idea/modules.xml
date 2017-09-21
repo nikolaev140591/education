@@ -5,6 +5,9 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Project20170920.iml" filepath="$PROJECT_DIR$/.idea/modules/Project20170920.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Project20170920_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Project20170920_main.iml" group="Project20170920" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Project20170920_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Project20170920_test.iml" group="Project20170920" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/addressbook-web.iml" filepath="$PROJECT_DIR$/.idea/modules/addressbook-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/addressbook-web_main.iml" filepath="$PROJECT_DIR$/.idea/modules/addressbook-web_main.iml" group="addressbook-web" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/addressbook-web_test.iml" filepath="$PROJECT_DIR$/.idea/modules/addressbook-web_test.iml" group="addressbook-web" />
     </modules>
   </component>
 </project>
