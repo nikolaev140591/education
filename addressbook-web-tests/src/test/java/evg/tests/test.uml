@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="348.0" y="0.0">evg.tests.appmanager.SessionHelper</node>
+    <node x="63.76190476190473" y="379.0">evg.tests.tests.GroupCreationTests</node>
+    <node x="0.0" y="0.0">evg.tests.appmanager.GroupHelper</node>
+    <node x="97.33333333333331" y="111.0">evg.tests.appmanager.ApplicationManager</node>
+    <node x="125.3333333333333" y="278.0">evg.tests.tests.TestBase</node>
+    <node x="174.0" y="0.0">evg.tests.appmanager.NavigationHelper</node>
+    <node x="236.76190476190473" y="379.0">evg.tests.tests.GroupDeletionTests</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="evg.tests.appmanager.ApplicationManager" target="evg.tests.appmanager.GroupHelper">
+      <point x="-112.0" y="-58.5" />
+      <point x="113.33333333333331" y="91.0" />
+      <point x="25.66666666666663" y="91.0" />
+      <point x="-51.33333333333337" y="25.5" />
+    </edge>
+    <edge source="evg.tests.tests.TestBase" target="evg.tests.appmanager.ApplicationManager">
+      <point x="-50.0" y="-25.5" />
+      <point x="175.33333333333331" y="253.0" />
+      <point x="161.33333333333331" y="253.0" />
+      <point x="-64.0" y="58.5" />
+    </edge>
+    <edge source="evg.tests.appmanager.ApplicationManager" target="evg.tests.appmanager.SessionHelper">
+      <point x="112.0" y="-58.5" />
+      <point x="337.3333333333333" y="91.0" />
+      <point x="463.5" y="91.0" />
+      <point x="38.5" y="25.5" />
+    </edge>
+    <edge source="evg.tests.tests.GroupDeletionTests" target="evg.tests.tests.TestBase">
+      <point x="0.0" y="-14.5" />
+      <point x="312.7619047619047" y="354.0" />
+      <point x="275.3333333333333" y="354.0" />
+      <point x="50.0" y="25.5" />
+    </edge>
+    <edge source="evg.tests.appmanager.ApplicationManager" target="evg.tests.appmanager.NavigationHelper">
+      <point x="16.0" y="-58.5" />
+      <point x="241.33333333333331" y="91.0" />
+      <point x="251.0" y="91.0" />
+      <point x="0.0" y="25.5" />
+    </edge>
+    <edge source="evg.tests.tests.GroupCreationTests" target="evg.tests.tests.TestBase">
+      <point x="0.0" y="-14.5" />
+      <point x="140.26190476190473" y="354.0" />
+      <point x="175.33333333333331" y="354.0" />
+      <point x="-50.0" y="25.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.1" x="288.49999999999994" y="240.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
