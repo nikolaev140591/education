@@ -15,16 +15,18 @@ public class ApplicationManager {
   private SessionHelper sessionHelper;
   private NavigationHelper navigationHelper;
   private GroupHelper groupHelper;
+  private ContactHelper contactHelper;
   private String browser;
 
+
   public ApplicationManager(String browser) {
-        this.browser = browser;
+    this.browser = browser;
   }
 
   public void init() {
-      if (Objects.equals(browser, BrowserType.FIREFOX)) {
+    if (Objects.equals(browser, BrowserType.FIREFOX)) {
       wd = new FirefoxDriver();
-    } else if (Objects.equals(browser, BrowserType.CHROME)){
+    } else if (Objects.equals(browser, BrowserType.CHROME)) {
       wd = new ChromeDriver();
     } else if (Objects.equals(browser, BrowserType.IE)) {
       wd = new InternetExplorerDriver();
@@ -32,6 +34,7 @@ public class ApplicationManager {
     wd.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
     wd.get("http://localhost/addressbook/index.php");
     groupHelper = new GroupHelper(wd);
+    contactHelper = new ContactHelper(wd);
     navigationHelper = new NavigationHelper(wd);
     sessionHelper = new SessionHelper(wd);
     sessionHelper.login("admin", "qwe");
@@ -44,6 +47,10 @@ public class ApplicationManager {
 
   public GroupHelper getGroupHelper() {
     return groupHelper;
+  }
+
+  public ContactHelper getContactHelper() {
+    return contactHelper;
   }
 
   public NavigationHelper getNavigationHelper() {

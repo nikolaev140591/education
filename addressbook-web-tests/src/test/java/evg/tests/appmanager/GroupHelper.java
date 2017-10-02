@@ -3,7 +3,6 @@ package evg.tests.appmanager;
 import evg.tests.model.GroupData;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class GroupHelper extends HelperBase {
 
@@ -12,7 +11,7 @@ public class GroupHelper extends HelperBase {
   }
 
   public void returnToGroupPage() {
-    click(By.linkText("group page"));
+    click(By.linkText("add new"));
   }
 
   public void submitToGroupPage() {
