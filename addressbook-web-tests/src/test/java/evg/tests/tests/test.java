@@ -1,5 +1,3 @@
-package evg.tests.tests;
-
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
@@ -32,18 +30,15 @@ public class test {
         wd.findElement(By.name("pass")).click();
         wd.findElement(By.name("pass")).sendKeys("\\undefined");
         wd.findElement(By.xpath("//form[@id='LoginForm']/input[3]")).click();
-        wd.findElement(By.linkText("Добавить контакт")).click();
-        wd.findElement(By.name("address")).click();
-        wd.findElement(By.name("address")).clear();
-        wd.findElement(By.name("address")).sendKeys("111");
-        wd.findElement(By.xpath("//div[@id='content']/form/input[1]")).click();
+        wd.findElement(By.xpath("//table[@id='maintable']/tbody/tr[2]/td[8]/a/img")).click();
         wd.findElement(By.name("email")).click();
         wd.findElement(By.name("email")).clear();
-        wd.findElement(By.name("email")).sendKeys("qqq");
-        wd.findElement(By.name("fax")).click();
-        wd.findElement(By.name("fax")).clear();
-        wd.findElement(By.name("fax")).sendKeys("qqq");
-        wd.findElement(By.xpath("//div[@id='content']/form/input[21]")).click();
+        wd.findElement(By.name("email")).sendKeys("qqq-777");
+        wd.findElement(By.name("notes")).click();
+        wd.findElement(By.name("notes")).clear();
+        wd.findElement(By.name("notes")).sendKeys("123");
+        wd.findElement(By.xpath("//div[@id='content']/form[1]/input[22]")).click();
+        wd.findElement(By.linkText("home page")).click();
     }
     
     @AfterMethod

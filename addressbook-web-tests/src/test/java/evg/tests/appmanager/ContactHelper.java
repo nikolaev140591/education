@@ -15,22 +15,24 @@ public class ContactHelper extends HelperBase {
     type(By.name("address"), contactData1.getAddress());
   }
 
-  public void fillContactForm(ContactData2 contactData2) {
-    type(By.name("contact_midlename"), contactData2.getMiddlename());
-    type(By.name("contact_lastname"), contactData2.getLastname());
-    type(By.name("contact_address"), contactData2.getAddress());
-    type(By.name("contact_home"), contactData2.getHome());
-  }
-  public void returnToHomePage() {
-    click(By.linkText("home page"));
+  public void fillContactForm2(ContactData2 contactData2) {
+    type(By.name("email"), contactData2.getEmail());
+    type(By.name("lastname"), contactData2.getLastname());
+    type(By.name("middlename"), contactData2.getMiddlename());
+    type(By.name("nickname"), contactData2.getNickname());
+    type(By.name("address"), contactData2.getAddress());
+
   }
 
   public void initNextPageContactCreation() {
     click(By.xpath("//div[@id='content']/form/input[1]"));
   }
 
-  public void initSaveContactCreation() { click(By.xpath("//div[@id='content']/form/input[21]"));
+  public void initSubmitContactCreation() { click(By.xpath("//div[@id='content']/form/input[21]"));
   }
 
+  public void initContactModification(){
+    click(By.xpath("//table[@id='maintable']/tbody/tr[2]/td[8]/a/img"));
+  }
 
 }
