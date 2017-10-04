@@ -1,19 +1,22 @@
 package evg.tests.model;
 
 public class ContactData2 {
-  private final String email;
-  private final String lastname;
-  private final String middlename;
-  private final String nickname;
-  private final String address;
+    private final String address;
+    private final String lastname;
+    private final String email;
+    private final String middlename;
+    private final String nickname;
 
+    public ContactData2(String address, String lastname, String email, String middlename, String nickname) {
+      this.address = address;
+      this.lastname = lastname;
+      this.email = email;
+      this.middlename = middlename;
+      this.nickname = nickname;
+    }
 
-  public ContactData2(String email, String lastname, String middlename, String nickname, String address) {
-    this.email = email;
-    this.lastname = lastname;
-    this.middlename = middlename;
-    this.nickname = nickname;
-    this.address = address;
+  public String getAddress() {
+    return address;
   }
 
   public String getEmail() {
@@ -25,16 +28,10 @@ public class ContactData2 {
   }
 
   public String getMiddlename() {
-    return middlename;
+      return middlename;
   }
 
   public String getNickname() {
     return nickname;
   }
-
-  public String getAddress() {
-    return address;
-  }
-
 }
-

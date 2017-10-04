@@ -24,15 +24,21 @@ public class ContactHelper extends HelperBase {
 
   }
 
+
   public void initNextPageContactCreation() {
     click(By.xpath("//div[@id='content']/form/input[1]"));
   }
 
-  public void initSubmitContactCreation() { click(By.xpath("//div[@id='content']/form/input[21]"));
+  public void initSubmitContactCreation() {
+    click(By.xpath("//div[@id='content']/form/input[1]"));
   }
 
-  public void initContactModification(){
+  public void initContactModification() {
     click(By.xpath("//table[@id='maintable']/tbody/tr[2]/td[8]/a/img"));
+  }
+
+  public void initSubmitContactModification() {
+    click(By.name("update"));
   }
 
 }
