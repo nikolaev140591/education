@@ -19,6 +19,10 @@ return;
     click(By.linkText("Группы"));
   }
 
+  public void returnToGroupPage() {
+    click(By.linkText("group page"));
+  }
+
   public void gotoContactCreation() {
     click(By.linkText("Добавить контакт"));
   }
@@ -30,3 +34,5 @@ return;
     click(By.linkText("Главная"));
   }
 }
+
+
