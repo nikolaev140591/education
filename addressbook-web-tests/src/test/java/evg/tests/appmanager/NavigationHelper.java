@@ -11,14 +11,22 @@ public class NavigationHelper extends HelperBase {
   }
 
   public void gotoGroupPage() {
+    if (isElementPresent(By.tagName("h1"))
+            && wd.findElement(By.tagName("h1")).getText().equals("Groups")
+            && isElementPresent(By.linkText("groups"))) {
+return;
+    }
     click(By.linkText("Группы"));
   }
 
-  public void gotoContactCreation(){
+  public void gotoContactCreation() {
     click(By.linkText("Добавить контакт"));
   }
 
-  public void returnToHomePage() {
+  public void gotoHomePage() {
+    if (isElementPresent(By.id("maintable"))){
+      return;
+    }
     click(By.linkText("Главная"));
   }
 }
