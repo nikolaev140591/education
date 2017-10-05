@@ -44,5 +44,9 @@ public class HelperBase {
       return false;
     }
   }
+
+  public void gotoContactCreation() {
+    click(By.linkText("Добавить контакт"));
+  }
 }
 

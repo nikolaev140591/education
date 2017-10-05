@@ -23,10 +23,6 @@ return;
     click(By.linkText("group page"));
   }
 
-  public void gotoContactCreation() {
-    click(By.linkText("Добавить контакт"));
-  }
-
   public void gotoHomePage() {
     if (isElementPresent(By.id("maintable"))){
       return;
